@@ -36,8 +36,8 @@ Vagrant.configure("2") do |config|
 
             echo "So let's restart apache..."
             sudo service apache2 restart
-            ## dump.sql just drop the file in the root folder
-            mysql -u root -proot scotchbox < /var/www/dump.sql
+            ## dump.sql just drop the file in the root folder and change this "yourdatabase" to your DB's name
+            ## mysql -u root -proot yourdatabase < /var/www/dump.sql
 
         done
 
