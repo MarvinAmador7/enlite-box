@@ -38,7 +38,8 @@ Vagrant.configure("2") do |config|
             sudo service apache2 restart
             ## dump.sql just drop the file in the root folder and change this "yourdatabase" to your DB's name
             ## mysql -u root -proot yourdatabase < /var/www/dump.sql
-
+            ## Add Composer to PATH
+            export PATH="~/.composer/vendor/bin:$PATH" 
         done
 
     SHELL
