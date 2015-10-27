@@ -36,6 +36,8 @@ Vagrant.configure("2") do |config|
 
             echo "So let's restart apache..."
             sudo service apache2 restart
+            ## dump.sql just drop the file in the root folder
+            mysql -u root -proot scotchbox < /var/www/dump.sql
 
         done
 
